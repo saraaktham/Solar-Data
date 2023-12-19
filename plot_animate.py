@@ -20,10 +20,10 @@ text = ['Location1(Golden,CO)', 'Location2(Colorado Spring,CO)',
 y_pred_list = []
 y_true_list = []
 for i in range(locs):
-    with open("pred_nn{}".format(i+1), "rb") as fp:   # Unpickling
+    with open("dump_data/pred_nn{}".format(i+1), "rb") as fp:   # Unpickling
         y_pred_list.append(pickle.load(fp))
     
-    with open("true_y{}".format(i+1), "rb") as fp:   # Unpickling
+    with open("dump_data/true_y{}".format(i+1), "rb") as fp:   # Unpickling
         y_true_list.append(pickle.load(fp))
 
 
